@@ -8,7 +8,7 @@ This repository has Acados, Casadi and neural mpc in a dockerfile for NVIDIA Jet
   
 ```
 ## Pull docker image
-This will take several minutes, get a docker FROM nvcr.io/nvidia/l4t-pytorch:r35.2.1-pth2.0-py3
+This will take several minutes (aprox 60 min), get a docker FROM nvcr.io/nvidia/l4t-pytorch:r35.2.1-pth2.0-py3
 The image size is about 15GB, need to set aside enough space.
 ```
     cd ~/your_ws/ml-casadi_Jetson
