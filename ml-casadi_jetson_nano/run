@@ -1,2 +1,0 @@
-sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -it --name ml_casadi_container --network host --cpuset-cpus="0" -v ~/:/epvelasco -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw  ml_casadi
-
