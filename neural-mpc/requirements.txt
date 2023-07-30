@@ -1,6 +1,6 @@
 #numpy>=1.21
 #scipy>=1.7
-#tqdm>=4.26
+tqdm>=4.26
 #matplotlib>=3.5
 scikit-learn>=1.0
 #casadi>=3.5
