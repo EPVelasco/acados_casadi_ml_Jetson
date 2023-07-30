@@ -16,4 +16,4 @@ The image size is about 15GB, need to set aside enough space.
 ```
 ## Create container
 ```
-    sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -it --name ml_casadi_container --network host --cpuset-cpus="0" --runtime=nvidia -v ~/:/epvelasco --workdir=${HOME}/ml_casadi/src/Pendulum_cart/Invert_pendulum ml_casadi
+    sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -it --name ml_casadi_container --network host --cpuset-cpus="0"  -v ~/:/epvelasco --workdir=/epvelasco/Controller_Onboard/Servo_MPC_UAV_Acados ml_casadi
