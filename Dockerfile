@@ -78,7 +78,7 @@ RUN apt install -y vim
 RUN cd ${HOME}/ml_casadi/src/ && git clone https://github.com/lfrecalde1/Pendulum_cart.git
 
 # set up environment
-RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+
 COPY ./update_bashrc /sbin/update_bashrc
 RUN sudo chmod +x /sbin/update_bashrc ; sudo chown ros /sbin/update_bashrc ; sync ; /bin/bash -c /sbin/update_bashrc ; sudo rm /sbin/update_bashrc
 
@@ -87,6 +87,6 @@ COPY ./t_renderer ${HOME}/ml_casadi/src/acados/bin/
 RUN sudo chmod 777  ${HOME}/ml_casadi/src/acados/bin/t_renderer
 
 #### instal Latex for matplotlib
+RUN apt-get update
 RUN apt-get -y install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
-
 
