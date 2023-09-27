@@ -1,5 +1,5 @@
 # ml-casadi_Jetson
-This repository has Acados, Casadi and neural mpc in a dockerfile for NVIDIA Jetson. In addition, the basic version of ros noetic is installed. It has been tested on a Jetson Nano. 
+This repository has Acados, Casadi and neural mpc in a dockerfile for NVIDIA Jetson. In addition, the basic version of ros noetic is installed. It has been tested on a Jetson Nano and Jetson Orin NX. 
 
 ## Clone repository and build docker
 ```
